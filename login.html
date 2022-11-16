@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link rel="stylesheet" href="login.css"/>
+</head>
+<body>
+    <div class="container">
+        <h1 class="label">User Login</h1>
+        <form class="form1" method="post" name="form" >
+            <div class="font">Username</div>
+            <input type="text" name="uname" id="un"/><br><br>
+            <span id="in" style="color:red"></span>
+            <div class="font2">Password</div>
+            <input type="Password" name="pass" id="pas"/><br>
+            <span id="i" style="color: red;"></span>
+            <button type="submit" onclick="validate();return false">Login</button>
+        </form>
+
+
+
+   </div>    
+<script type="text/javascript">
+function validate()
+{    
+var a=document.getElementById("un").value;
+var a1=document.getElementById("un");
+var b=document.getElementById("pas").value;
+var b1=document.getElementById("pas");
+var ureg=/^[a-zA-Z][A-Za-z0-9]+/;
+var preg=/^[a-zA-Z][A-Za-z0-9!@#$%&*]{5,8}/;
+if(ureg.test(a) && preg.test(b))
+{
+    var i=document.getElementById("in");
+    
+    b1.style.border=" green solid 3px ";
+
+
+
+   var p=document.getElementById("i");
+    
+    a1.style.border=" green solid 3px ";
+
+
+
+   alert("username password is done");
+
+
+
+}
+
+
+
+else if(ureg.test(a))
+
+
+
+{
+var i=document.getElementById("i");
+i.innerHTML="please enter valid password";    
+b1.style.border=" red solid 3px ";
+
+
+
+}
+else if(preg.test(b))
+{
+    var p=document.getElementById("in");
+    p.innerHTML="plese enter valid username"
+    a1.style.border=" red solid 3px ";
+}
+else
+{   var i=document.getElementById("i");
+    i.innerHTML="please enter valid password";    
+    b1.style.border=" red solid 3px ";
+
+
+
+   var p=document.getElementById("in");
+    p.innerHTML="plese enter valid username"
+    a1.style.border=" red solid 3px ";
+}
+    
+}
+</script>
+</body>
+</html>

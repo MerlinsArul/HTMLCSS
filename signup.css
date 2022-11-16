@@ -1,0 +1,75 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    }
+    body{
+     background: url(img.png) no-repeat;
+     background-size: cover;
+     align-items: center;
+     justify-content: center;
+     display:flex;
+     font-family: sans-serif;
+    }
+    .container
+    {
+        position: relative;
+        margin-top: 100px;
+        width: 450px;
+        height: auto;
+        background: #dedede;
+    
+        
+    }
+    .label
+    {
+      padding: 20px 130px;
+      font-size: 35px;
+      font-weight: bold;
+      color: #130f40;
+    }
+    .form1{
+        padding: 20px 40px;
+    }
+    .form1.font{
+        font-size: 18px;
+        color: #130f40;
+        margin: 5px 0;
+    
+    }
+    .form1 input{
+        margin-top: 16px;
+        height: 40px;
+        width: 350px;
+        padding: 0 5px;
+        outline: none;
+        border: 1px solid silver;
+    
+    }
+    .form1.font2{
+        margin-top: 30px;
+    
+    }
+    .form1.font3{
+        font-size: 18px;
+        color: #130f40;
+        margin: 5px 0;
+    }
+    .form1 button{
+        margin: 45px 0 30px 0;
+        height: 45px;
+        width: 365px;
+        font-size: 20px;
+        color: white;
+        outline: none;
+        cursor: pointer;
+        font-weight:bold;
+        background: #1A237E;
+        border-radius: 3px;
+        border: 1px solid #3949AB;
+    
+    
+    }
+    .form1 button:hover{
+        background: #151c61;
+    }
