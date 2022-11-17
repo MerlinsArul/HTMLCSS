@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Event</title>
+  <style>
+    #title{
+        font-style: italic;
+    }
+    .color{
+        color: blueviolet;
+        font-family: Verdana,;
+    }
+  </style>
+</head>
+<body>
+  <div id="title">Let us discuss about ID </div>
+  <div id="title">Here also we discuss about Id</div>
+  <div class="color">Let us discuss about Class</div> 
+  <div class="color">The second line for the class</div>
+  <script>
+    document.getElementById('title').addEventListener('click',()=>{
+        console.log("clicked");
+    })
+ document.getElementsByClassName('color')[1].addEventListener('click',()=>{
+        console.log("clicked on class");})
+  </script>
+</body>
+</html>
