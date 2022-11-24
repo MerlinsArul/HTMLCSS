@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <label for="mycheck">Payment via Card</label>
+    <input type="checkbox" id="mycheck"><br>
+    Visacard: <input type="radio" name="card" id="visa">
+    Mastercard: <input type="radio" name="card" id="master">
+    Rupaycard:<input type="radio" name="card" id="rupay"><br>
+    <button id="myid">Submit</button><br>
+    <script>
+        document.getElementById("myid").onclick = function () {
+            const mycheck = document.getElementById("mycheck");
+            const visa = document.getElementById("visa");
+            const master = document.getElementById("master");
+            const rupay = document.getElementById("rupay");
+            if (mycheck.checked) {
+                console.log("You are making Payment through Card")
+            }
+            else {
+                console.log("You are not making Payment through Card");
+            }
+            if (visa.checked) {
+                console.log("You are using mastercard");
+            }
+            else if (master.checked) {
+                console.log("You are using master");
+            }
+            else if (rupay.checked) {
+                console.log("You are using rupay")
+            }
+            else {
+                console.log("You are paying amount");
+            }
+        }
+    </script>
+</body>
+
+</html>

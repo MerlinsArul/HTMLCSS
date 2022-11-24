@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <label id="alabel">SideA</label><br>
+    <input type="text" id="atext"><br>
+    <label id="blabel">SideB</label><br>
+    <input type="text" id="btext"><br><br>
+    <button type="button" id="subbtn">submit</button><br>
+    <label id="clabel"></label>
+    <script>
+        let a;
+        let b;
+        let c;
+        document.getElementById("subbtn").onclick = function () {
+            a = document.getElementById("atext").value;
+            a = Number(a);
+            b = document.getElementById("btext").value;
+            b = Number(b);
+            c = Math.sqrt(Math.pow(a, 2) + Math.pow(b, 2));
+            document.getElementById("clabel").innerHTML = "Side C:" + c;
+
+        }
+    </script>
+</body>
+
+</html>
